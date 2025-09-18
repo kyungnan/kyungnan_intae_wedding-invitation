@@ -510,8 +510,8 @@ function openNaverMap() {
 }
 
 function openTMap() {
-    // 웹 브라우저에서 작동하는 T맵 URL
-    const url = 'https://tmap.life/route/walk?goalname=분당앤스퀘어&goalx=127.1069711&goaly=37.3400457';
+    // T맵 웹 검색 URL로 변경
+    const url = 'https://www.tmap.co.kr/tmap2/mobile/route.jsp?name=분당앤스퀘어&lon=127.1069711&lat=37.3400457';
     window.open(url, '_blank');
 }
 
