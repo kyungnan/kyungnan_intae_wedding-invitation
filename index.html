@@ -43,6 +43,18 @@
 
     <!-- Main Content -->
     <div id="main-content" class="main-content">
+        <!-- BGM Control -->
+        <div class="bgm-control">
+            <button id="bgm-toggle" class="bgm-btn">
+                <div class="play-icon"></div>
+            </button>
+        </div>
+        
+        <!-- BGM Audio -->
+        <audio id="bgm" loop>
+            <source src="bgm.mp3" type="audio/mpeg">
+        </audio>
+        
         <!-- Hero Section -->
         <section class="hero-section">
             <div class="hero-content">
@@ -351,61 +363,6 @@
             </div>
         </section>
 
-        <!-- 우리의 시간 Section (주석처리) -->
-        <!--
-        <section class="timeline-section">
-            <div class="container">
-                <div class="timeline-content">
-                    <div class="timeline-header">
-                        <h2 class="timeline-title">우리의 시간</h2>
-                    </div>
-                    
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-image">
-                                <img src="https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="첫 만남">
-                            </div>
-                            <div class="timeline-content-box">
-                                <h3 class="timeline-period">첫 만남</h3>
-                                <p class="timeline-description">저희는 바리에서<br>처음 만났어요.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="timeline-item reverse">
-                            <div class="timeline-image">
-                                <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0e4a6?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="1주년">
-                            </div>
-                            <div class="timeline-content-box">
-                                <h3 class="timeline-period">1주년</h3>
-                                <p class="timeline-description">함께한 1년<br>서로를 알아가는 시간<br>이었어요.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="timeline-item">
-                            <div class="timeline-image">
-                                <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="2주년">
-                            </div>
-                            <div class="timeline-content-box">
-                                <h3 class="timeline-period">2주년</h3>
-                                <p class="timeline-description">함께한 2년<br>우리는 결혼을 결심했어요.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="timeline-item reverse">
-                            <div class="timeline-image">
-                                <img src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="결혼식">
-                            </div>
-                            <div class="timeline-content-box">
-                                <h3 class="timeline-period">Wedding Day</h3>
-                                <p class="timeline-description">저희는 이날 결혼해요.<br>저희의 시작을<br>축하해주세요.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        -->
-
         <!-- 마음전하실곳 Section -->
         <section class="gift-section">
             <div class="container">
@@ -432,12 +389,12 @@
                                                 <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
                                             </svg>
                                         </button>
-                                        <button class="kakaopay-icon-btn" onclick="openKakaoPay('신랑')" title="카카오페이 송금">
+                                        <!-- <button class="kakaopay-icon-btn" onclick="openKakaoPay('신랑')" title="카카오페이 송금">
                                             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                                                 <path d="M12 3C7.031 3 3 6.582 3 10.975C3 13.719 4.75 16.063 7.25 17.25L6.375 20.625C6.281 20.938 6.563 21.219 6.875 21.125L10.875 19.313C11.25 19.375 11.625 19.406 12 19.406C16.969 19.406 21 15.825 21 11.431C21 7.038 16.969 3 12 3Z"/>
                                             </svg>
                                             <span style="font-size: 12px; margin-left: 2px;">pay</span>
-                                        </button>
+                                        </button> -->
                                     </div>
                                 </div>
                                 <div class="account-divider"></div>
@@ -453,12 +410,12 @@
                                                 <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
                                             </svg>
                                         </button>
-                                        <button class="kakaopay-icon-btn" onclick="openKakaoPay('신랑아버지')" title="카카오페이 송금">
+                                        <!-- <button class="kakaopay-icon-btn" onclick="openKakaoPay('신랑아버지')" title="카카오페이 송금">
                                             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                                                 <path d="M12 3C7.031 3 3 6.582 3 10.975C3 13.719 4.75 16.063 7.25 17.25L6.375 20.625C6.281 20.938 6.563 21.219 6.875 21.125L10.875 19.313C11.25 19.375 11.625 19.406 12 19.406C16.969 19.406 21 15.825 21 11.431C21 7.038 16.969 3 12 3Z"/>
                                             </svg>
                                             <span style="font-size: 12px; margin-left: 2px;">pay</span>
-                                        </button>
+                                        </button> -->
                                     </div>
                                 </div>
                                 <div class="account-divider"></div>
@@ -474,12 +431,12 @@
                                                 <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
                                             </svg>
                                         </button>
-                                        <button class="kakaopay-icon-btn" onclick="openKakaoPay('신랑어머니')" title="카카오페이 송금">
+                                        <!-- <button class="kakaopay-icon-btn" onclick="openKakaoPay('신랑어머니')" title="카카오페이 송금">
                                             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                                                 <path d="M12 3C7.031 3 3 6.582 3 10.975C3 13.719 4.75 16.063 7.25 17.25L6.375 20.625C6.281 20.938 6.563 21.219 6.875 21.125L10.875 19.313C11.25 19.375 11.625 19.406 12 19.406C16.969 19.406 21 15.825 21 11.431C21 7.038 16.969 3 12 3Z"/>
                                             </svg>
                                             <span style="font-size: 12px; margin-left: 2px;">pay</span>
-                                        </button>
+                                        </button> -->
                                     </div>
                                 </div>
                             </div>
@@ -557,6 +514,16 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- 카카오톡 공유 Section -->
+        <section class="final-wedding-section">
+            <div class="final-share-button">
+                <button class="kakao-share-final" onclick="shareKakao()">
+                    <img src="kakao-talk-icon.jpeg" alt="카카오톡" class="kakao-icon-direct">
+                    <span class="kakao-share-final-text">카카오톡으로 공유하기</span>
+                </button>
             </div>
         </section>
 

@@ -504,21 +504,15 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 // 지도 앱 열기 함수들
 function openNaverMap() {
-    const address = "경기도 성남시 분당구 탄천상로 151번길 20 분당앤스퀘어";
+    const address = "경기 성남시 분당구 탄천상로151번길 20";
     const url = `https://map.naver.com/v5/search/${encodeURIComponent(address)}`;
     window.open(url, '_blank');
 }
 
 function openTMap() {
-    const address = "경기도 성남시 분당구 탄천상로 151번길 20 분당앤스퀘어";
-    const url = `https://apis.openapi.sk.com/tmap/app/routes?appKey=l7xx6b2f1b5e5c6e4e8a9b0c1d2e3f4g5h6i&name=${encodeURIComponent(address)}`;
-    // 티맵 앱이 설치되어 있으면 앱으로, 없으면 웹으로
-    window.location.href = `tmap://search?name=${encodeURIComponent("분당앤스퀘어")}`;
-    
-    // 앱이 없는 경우를 위한 fallback
-    setTimeout(() => {
-        window.open(`https://tmapapi.sktelecom.com/main.html#webservice/docs/tmapv2`, '_blank');
-    }, 1000);
+    // 웹 브라우저에서 작동하는 T맵 URL
+    const url = 'https://tmap.life/route/walk?goalname=분당앤스퀘어&goalx=127.1069711&goaly=37.3400457';
+    window.open(url, '_blank');
 }
 
 function openKakaoNavi() {
@@ -532,13 +526,13 @@ function initKakaoMap() {
     if (typeof kakao !== 'undefined' && kakao.maps) {
         const container = document.getElementById('map');
         const options = {
-            center: new kakao.maps.LatLng(37.3595, 127.1052), // 분당 구미동 좌표
+            center: new kakao.maps.LatLng(37.3400457, 127.1069711), // 분당앤스퀘어 웨딩홀 정확한 좌표
             level: 4
         };
         
         const map = new kakao.maps.Map(container, options);
         
-        const markerPosition = new kakao.maps.LatLng(37.3595, 127.1052);
+        const markerPosition = new kakao.maps.LatLng(37.3400457, 127.1069711);
         const marker = new kakao.maps.Marker({
             position: markerPosition
         });
@@ -718,6 +712,71 @@ document.addEventListener('DOMContentLoaded', function() {
     if (closeBtn) closeBtn.onclick = closeModal;
     if (prevBtn) prevBtn.onclick = () => changeImage(-1);
     if (nextBtn) nextBtn.onclick = () => changeImage(1);
+    
+    // BGM 제어 기능
+    const bgm = document.getElementById('bgm');
+    const bgmToggle = document.getElementById('bgm-toggle');
+    let isPlaying = false;
+
+    if (bgm && bgmToggle) {
+        // BGM 볼륨 설정
+        bgm.volume = 0.3;
+
+        // 자동 재생 시도 함수
+        function tryAutoPlay() {
+            bgm.play().then(function() {
+                bgmToggle.innerHTML = '<div class="pause-icon"></div>';
+                isPlaying = true;
+            }).catch(function(error) {
+                console.log('자동 재생 실패:', error);
+                bgmToggle.innerHTML = '<div class="play-icon"></div>';
+                isPlaying = false;
+            });
+        }
+
+        // 즉시 재생 시도
+        tryAutoPlay();
+        
+        // 여러 시점에서 재생 시도
+        setTimeout(tryAutoPlay, 100);
+        setTimeout(tryAutoPlay, 500);
+        setTimeout(tryAutoPlay, 1000);
+
+        // BGM 토글 버튼 클릭 이벤트
+        bgmToggle.addEventListener('click', function() {
+            if (isPlaying) {
+                bgm.pause();
+                bgmToggle.innerHTML = '<div class="play-icon"></div>';
+                isPlaying = false;
+            } else {
+                bgm.play().catch(function(error) {
+                    console.log('음악 재생 실패:', error);
+                });
+                bgmToggle.innerHTML = '<div class="pause-icon"></div>';
+                isPlaying = true;
+            }
+        });
+
+        // 사용자 상호작용 시 재생 시도
+        document.addEventListener('click', function() {
+            if (!isPlaying) {
+                tryAutoPlay();
+            }
+        });
+
+        // 터치 이벤트에서도 재생 시도
+        document.addEventListener('touchstart', function() {
+            if (!isPlaying) {
+                tryAutoPlay();
+            }
+        });
+
+        // 음악이 끝났을 때 처리
+        bgm.addEventListener('ended', function() {
+            bgmToggle.innerHTML = '<div class="play-icon"></div>';
+            isPlaying = false;
+        });
+    }
     
     // 모달 외부 클릭시 닫기
     window.onclick = function(event) {

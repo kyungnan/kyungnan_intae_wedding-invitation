@@ -16,6 +16,61 @@
     font-display: swap;
 }
 
+/* BGM Control */
+.bgm-control {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.bgm-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.bgm-btn:hover {
+    transform: scale(1.05);
+}
+
+.bgm-btn:active {
+    transform: scale(0.95);
+}
+
+/* 재생 아이콘 (삼각형) */
+.bgm-btn .play-icon {
+    width: 0;
+    height: 0;
+    border-left: 12px solid #333;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    margin-left: 3px;
+}
+
+/* 일시정지 아이콘 (두 개의 막대) */
+.bgm-btn .pause-icon {
+    display: flex;
+    gap: 4px;
+}
+
+.bgm-btn .pause-icon::before,
+.bgm-btn .pause-icon::after {
+    content: '';
+    width: 4px;
+    height: 16px;
+    background: #333;
+    border-radius: 1px;
+}
+
 /* Reset and Base Styles */
 * {
     margin: 0;
@@ -424,6 +479,8 @@ body.loading {
     position: relative;
     width: 100%;
     background: white;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .final-wedding-image {
@@ -473,7 +530,7 @@ body.loading {
 }
 
 .final-share-button {
-    padding: 40px 20px;
+    padding: 0 20px;
     text-align: center;
     background: white;
 }
@@ -500,6 +557,8 @@ body.loading {
     width: 32px;
     height: 32px;
     object-fit: contain;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .kakao-share-final-text {
@@ -1172,9 +1231,7 @@ section {
 }
 
 /* Gallery Section */
-.gallery-section {
-    background: #ffffff;
-}
+/* Gallery Section - 중복 제거됨 */
 
 .gallery-slider {
     position: relative;
@@ -2069,7 +2126,7 @@ section {
 
 /* Location Section */
 .location-section {
-    padding: 80px 0;
+    padding: 80px 0 40px 0 !important;
     background: #ffffff;
 }
 
@@ -2267,7 +2324,7 @@ section {
 
 /* Gallery Section */
 .gallery-section {
-    padding: 80px 0;
+    padding: 80px 0 40px 0 !important;
     background: #ffffff;
 }
 
@@ -2408,7 +2465,7 @@ section {
 /* 마음전하실곳 Section */
 /* 마음전하실곳 Section */
 .gift-section {
-    padding: 80px 0;
+    padding: 80px 0 40px 0;
     background: #ffffff;
 }
 
