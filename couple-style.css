@@ -1,0 +1,156 @@
+/* Couple Introduction Section Override */
+.couple-intro-content {
+    width: 100% !important;
+}
+
+.couple-container {
+    display: flex !important;
+    gap: 30px !important;
+    max-width: 800px !important;
+    margin: 0 auto !important;
+    justify-content: center !important;
+}
+
+.person-profile {
+    background: transparent !important;
+    border-radius: 8px !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    text-align: center !important;
+    overflow: hidden !important;
+    flex: 1 !important;
+    max-width: 350px !important;
+}
+
+.person-image {
+    width: 100% !important;
+    height: 200px !important;
+    overflow: hidden !important;
+}
+
+.person-image img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+.person-info {
+    padding: 25px 20px !important;
+}
+
+.person-name {
+    font-size: 1rem !important;
+    font-weight: 300 !important;
+    color: #2c3e50 !important;
+    margin-bottom: 15px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+}
+
+.person-name i {
+    font-size: 0.9rem !important;
+    color: #6c757d !important;
+}
+
+.person-birth, .person-location, .person-job {
+    font-size: 0.95rem !important;
+    color: #495057 !important;
+    margin-bottom: 6px !important;
+    font-weight: 400 !important;
+}
+
+.person-message {
+    font-size: 1rem !important;
+    color: #2c3e50 !important;
+    margin: 15px 0 10px 0 !important;
+    font-weight: 500 !important;
+}
+
+.person-parents {
+    font-size: 0.9rem !important;
+    color: #6c757d !important;
+    margin-bottom: 0 !important;
+    font-weight: 400 !important;
+}
+
+/* 모바일에서도 가로 배치 유지 */
+@media (max-width: 768px) {
+    .couple-intro-section {
+        padding: 30px 0 !important;
+    }
+    
+    .couple-container {
+        flex-direction: row !important;
+        gap: 20px !important;
+        max-width: 100% !important;
+        padding: 0 20px !important;
+    }
+    
+    .person-profile {
+        max-width: none !important;
+    }
+    
+    .person-image {
+        height: 180px !important;
+    }
+    
+    .person-info {
+        padding: 20px 15px !important;
+    }
+    
+    .person-name {
+        font-size: 1rem !important;
+    }
+    
+    .person-birth, .person-location, .person-job {
+        font-size: 0.85rem !important;
+    }
+    
+    .person-message {
+        font-size: 0.9rem !important;
+    }
+    
+    .person-parents {
+        font-size: 0.8rem !important;
+    }
+}
+
+/* 매우 작은 화면에서도 가로 배치 유지 */
+@media (max-width: 480px) {
+    .couple-intro-section {
+        padding: 20px 0 !important;
+    }
+    
+    .couple-container {
+        flex-direction: row !important;
+        gap: 15px !important;
+        max-width: 100% !important;
+        padding: 0 15px !important;
+    }
+    
+    .person-image {
+        height: 150px !important;
+    }
+    
+    .person-info {
+        padding: 15px 10px !important;
+    }
+    
+    .person-name {
+        font-size: 1rem !important;
+    }
+    
+    .person-birth, .person-location, .person-job {
+        font-size: 0.8rem !important;
+    }
+    
+    .person-message {
+        font-size: 0.85rem !important;
+    }
+    
+    .person-parents {
+        font-size: 0.75rem !important;
+    }
+}

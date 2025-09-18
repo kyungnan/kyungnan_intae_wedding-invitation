@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인태 그리고 경난</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="이인태와 배경난의 결혼식에 여러분을 초대합니다. 2025년 12월 14일 오전 11시">
+    <meta name="keywords" content="결혼식, 청첩장, 이인태, 배경난">
+    <meta property="og:title" content="이인태 ♥ 배경난 결혼식 초대">
+    <meta property="og:description" content="2025년 12월 14일 오전 11시, 여러분을 초대합니다">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Noto+Serif+KR:wght@300;400;500;600;700&family=Gowun+Batang:wght@400;700&family=Dancing+Script:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:ital,wght@0,300;0,400;0,500;1,400&family=Yellowtail&family=Srisakdi:wght@400;700&family=Nanum+Pen+Script&family=Alex+Brush&family=MapoDacapo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gabia+Solmee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css?v=1758069640">
+    <link rel="stylesheet" href="couple-style.css?v=1758069640">
+    
+    <!-- Kakao SDK -->
+    <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.2/kakao.min.js"></script>
+    <!-- Kakao Map API -->
+    <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=d38ad3094c381290adf32e265581afe2"></script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-lettering">
+                <div class="loading-text">
+                    <span class="loading-line">Welcome to</span>
+                    <span class="loading-line">Our Wedding</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <!-- Date Section -->
+                <div class="date-section">
+                    <div class="date-large">12<span class="date-slash">/</span>14</div>
+                </div>
+                
+                <!-- Names Section -->
+                <div class="names-section">
+                    <h1 class="korean-names">인태 그리고 경난</h1>
+                    <h2 class="english-names">Our Wedding</h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- Photo Section -->
+        <section class="hero-photo-section">
+            <div class="photo-container">
+                <img src="wedding-photo.jpg" alt="Wedding Photo" class="hero-photo">
+                <div class="photo-overlay">
+                    <div class="overlay-text">
+                        <p>장담하건대, 세상이 다 겨울이어도</p>
+                        <p>우리 사랑은 늘 봄처럼 따뜻하고</p>
+                        <p>간혹, 여름처럼 뜨거울 겁니다.</p>
+                        <br>
+                        <p class="signature">이수동, 사랑가</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wedding Info & Couple Names Section -->
+        <section class="wedding-details-section">
+            <div class="container">
+                <div class="invitation-header">
+                    <!-- <h4 class="invitation-subtitle">INVITATION</h4> -->
+                    <!-- <h2 class="invitation-title">저희 결혼합니다</h2> -->
+                    <p>2025.12.14 SUN AM 11:00</p>
+                    <p>분당앤스퀘어 4층 컨벤션홀</p>
+                </div>
+                <!-- 결혼 메시지 -->
+                <div class="invitation-message">
+                    <div class="message-content">
+                        <P>초대합니다</P>
+                        <p>저희의 결혼 소식이</p>
+                        <p>부담스럽지 않게다가가길 바라며,</p>
+                        <p>편한 마음으로 오셔서</p>
+                        <p>축하해주시면 감사하겠습니다.</p>
+                    </div>
+                    
+                    <div class="final-message">
+                        <p>혹여 참석이 어려우시더라도 부담 갖지 마시고,</p>
+                        <p>마음으로 축하해주시면 감사하겠습니다.</p>
+                    </div>
+                </div>
+                
+                <!-- 신랑신부 사진 -->
+                <div class="couple-photo-section">
+                    <img src="couple-photo.jpg" alt="신랑신부 사진" class="couple-main-photo">
+                </div>
+                
+                <!-- 신랑신부 이름 -->
+                <div class="couple-names-info">
+                    <div class="groom-info">
+                        <span class="parent-name">이양섭·선연옥의</span>
+                        <span class="child-relation">아들</span>
+                        <a href="tel:010-2169-4885" class="name contact-link">
+                            이인태
+                            <span class="phone-icon">📞</span>
+                        </a>
+                    </div>
+                    <div class="bride-info">
+                        <span class="parent-name">배승기·이화순의</span>
+                        <span class="child-relation">딸</span>
+                        <a href="tel:010-3270-9210" class="name contact-link">
+                            배경난
+                            <span class="phone-icon">📞</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 혼주에게 연락하기 버튼 -->
+                <div class="contact-buttons">
+                    <button class="contact-btn" onclick="showContactOptions()">
+                        혼주에게 연락하기
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Calendar Section -->
+        <section class="calendar-section">
+            <div class="container">
+                <div class="calendar-content">
+                    <div class="calendar-title">
+                        <h3>십이월의</h3>
+                        <h3>열네번째 날.</h3>
+                    </div>
+                    <div class="calendar-grid">
+                        <div class="calendar-header">
+                            <div class="day-name">일</div>
+                            <div class="day-name">월</div>
+                            <div class="day-name">화</div>
+                            <div class="day-name">수</div>
+                            <div class="day-name">목</div>
+                            <div class="day-name">금</div>
+                            <div class="day-name">토</div>
+                        </div>
+                        <div class="calendar-body">
+                            <div class="calendar-date"></div>
+                            <div class="calendar-date">1</div>
+                            <div class="calendar-date">2</div>
+                            <div class="calendar-date">3</div>
+                            <div class="calendar-date">4</div>
+                            <div class="calendar-date">5</div>
+                            <div class="calendar-date">6</div>
+                            
+                            <div class="calendar-date">7</div>
+                            <div class="calendar-date">8</div>
+                            <div class="calendar-date">9</div>
+                            <div class="calendar-date">10</div>
+                            <div class="calendar-date">11</div>
+                            <div class="calendar-date">12</div>
+                            <div class="calendar-date">13</div>
+                            
+                            <div class="calendar-date-container">
+                                <div class="calendar-date wedding-date">14</div>
+                                <div class="wedding-time">오전 11시</div>
+                            </div>
+                            <div class="calendar-date">15</div>
+                            <div class="calendar-date">16</div>
+                            <div class="calendar-date">17</div>
+                            <div class="calendar-date">18</div>
+                            <div class="calendar-date">19</div>
+                            <div class="calendar-date">20</div>
+                            
+                            <div class="calendar-date">21</div>
+                            <div class="calendar-date">22</div>
+                            <div class="calendar-date">23</div>
+                            <div class="calendar-date">24</div>
+                            <div class="calendar-date">25</div>
+                            <div class="calendar-date">26</div>
+                            <div class="calendar-date">27</div>
+                            
+                            <div class="calendar-date">28</div>
+                            <div class="calendar-date">29</div>
+                            <div class="calendar-date">30</div>
+                            <div class="calendar-date">31</div>
+                        </div>
+                    </div>
+                    
+                    <!-- D-Day Countdown -->
+                    <div class="dday-countdown">
+                        <div class="countdown-timer">
+                            <div class="time-unit">
+                                <div class="time-number" id="days">0</div>
+                                <div class="time-label">Days</div>
+                            </div>
+                            <div class="time-unit">
+                                <div class="time-number" id="hours">0</div>
+                                <div class="time-label">Hours</div>
+                            </div>
+                            <div class="time-unit">
+                                <div class="time-number" id="minutes">0</div>
+                                <div class="time-label">Minutes</div>
+                            </div>
+                            <div class="time-unit">
+                                <div class="time-number" id="seconds">0</div>
+                                <div class="time-label">Seconds</div>
+                            </div>
+                        </div>
+                        <div class="dday-message">
+                            <p class="wedding-date-text">2025년 12월 14일 일요일 오전11시</p>
+                            <p class="dday-text">이인태 <span class="heart-color">♥</span> 배경난의 결혼식이 <span id="dday-number">0</span>일 남았습니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section class="location-section">
+            <div class="container">
+                <div class="location-content">
+                    <div class="location-header">
+                        <h4 class="location-subtitle">LOCATION</h4>
+                        <h2 class="location-title">오시는 길</h2>
+                    </div>
+                    
+                    <div class="venue-details">
+                        <p class="venue-name">분당앤스퀘어(구.베어캐슬) 4층 컨벤션홀</p>
+                        <p class="venue-address">경기도 성남시 분당구 탄천상로 151번길 20</p>
+                        <p class="venue-address">(구미동 159번지)</p>
+                        <p class="venue-phone">Tel. 031-728-5300</p>
+                    </div>
+                    
+                    <!-- 지도 -->
+                    <div class="map-container">
+                        <div id="map" style="width:100%;height:400px;"></div>
+                    </div>
+                    
+                    <!-- 지도 앱 링크 -->
+                    <div class="map-apps">
+                        <button class="map-app-btn kakao" onclick="openKakaoNavi()">
+                            <img src="kakao-icon.png" alt="카카오지도" class="app-icon"> 카카오지도
+                        </button>
+                        <button class="map-app-btn naver" onclick="openNaverMap()">
+                            <img src="tmap-icon.png" alt="네이버지도" class="app-icon"> 네이버지도
+                        </button>
+                        <button class="map-app-btn tmap" onclick="openTMap()">
+                            <img src="naver-icon.png" alt="티맵" class="app-icon"> 티맵
+                        </button>
+                    </div>
+                    
+                    <!-- 지하철 정보 -->
+                    <div class="transport-info">
+                        <h3 class="info-title">지하철</h3>
+                        <div class="transport-detail">
+                            <h4>분당선 오리역 하차</h4>
+                            <ul>
+                                <li>6번 출구 에스컬레이터 이용</li>
+                                <li>50M 거리내에 분당앤스퀘어가 있습니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- 버스 정보 -->
+                    <div class="transport-info">
+                        <h3 class="info-title">버스</h3>
+                        <div class="transport-detail">
+                            <h4>오리역 정류장 하차</h4>
+                            <ul>
+                                <li>성남: 820, 9403, 9404</li>
+                                <li>용인: 820, 810</li>
+                                <li>강남역: 1005-1, 8101(간선급행)</li>
+                                <li>여의도역 6번출구, 사당역 4번출구: 7007-1</li>
+                                <li>광주·모현: 60</li>
+                                <li>백석역·대화역·주엽역: 8109</li>
+                                <li>안양역·범계역: 1303</li>
+                                <li>4호선 산본역 1번출구: 3500</li>
+                                <li>간대입구역 2번출구: 102</li>
+                                <li>1호선 서울역 4번출구: 5500-1, 8100, 9001 (서울역 환승센터)</li>
+                                <li>1호선 종각역 8번출구: 5500-1, 8100</li>
+                                <li>2호선 을지로입구역 6번출구: 5500-1, 8100</li>
+                                <li>영등포: 9408</li>
+                                <li>송내역·부천터미널: 8106</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- 자차 정보 -->
+                    <div class="transport-info">
+                        <h3 class="info-title">자차</h3>
+                        <div class="transport-detail">
+                            <h4>네비게이션</h4>
+                            <ul>
+                                <li>"분당앤스퀘어" 또는 "오리역" 검색</li>
+                            </ul>
+                            
+                            <h4>주차장 안내</h4>
+                            <ul>
+                                <li>분당앤스퀘어 건물 뒷편 홈플러스, CGV, 애플프라자 주차장 입구 이용</li>
+                                <li>지하 3층, 지하 4층 주차장 이용</li>
+                                <li>웨딩홀 전용 엘리베이터 7,8호기를 이용하시면 편리합니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery-section">
+            <div class="container">
+                <div class="gallery-content">
+                    <div class="gallery-header">
+                        <h4 class="gallery-subtitle">GALLERY</h4>
+                        <h2 class="gallery-title">갤러리</h2>
+                    </div>
+                    
+                    <div class="gallery-container">
+                        <div class="gallery-grid" id="galleryGrid">
+                            <!-- 갤러리 이미지들이 여기에 동적으로 추가됩니다 -->
+                        </div>
+                        <div class="gallery-fade" id="galleryFade"></div>
+                        <div class="gallery-more" id="galleryMore">
+                            <button class="gallery-more-btn" onclick="toggleGallery()">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                    <path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- 이미지 모달 -->
+                    <div id="imageModal" class="modal">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <img class="modal-content" id="modalImage">
+                        <div class="modal-nav">
+                            <button class="prev-btn" onclick="changeImage(-1)">&#10094;</button>
+                            <button class="next-btn" onclick="changeImage(1)">&#10095;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 우리의 시간 Section (주석처리) -->
+        <!--
+        <section class="timeline-section">
+            <div class="container">
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h2 class="timeline-title">우리의 시간</h2>
+                    </div>
+                    
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-image">
+                                <img src="https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="첫 만남">
+                            </div>
+                            <div class="timeline-content-box">
+                                <h3 class="timeline-period">첫 만남</h3>
+                                <p class="timeline-description">저희는 바리에서<br>처음 만났어요.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item reverse">
+                            <div class="timeline-image">
+                                <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0e4a6?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="1주년">
+                            </div>
+                            <div class="timeline-content-box">
+                                <h3 class="timeline-period">1주년</h3>
+                                <p class="timeline-description">함께한 1년<br>서로를 알아가는 시간<br>이었어요.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-image">
+                                <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="2주년">
+                            </div>
+                            <div class="timeline-content-box">
+                                <h3 class="timeline-period">2주년</h3>
+                                <p class="timeline-description">함께한 2년<br>우리는 결혼을 결심했어요.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item reverse">
+                            <div class="timeline-image">
+                                <img src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="결혼식">
+                            </div>
+                            <div class="timeline-content-box">
+                                <h3 class="timeline-period">Wedding Day</h3>
+                                <p class="timeline-description">저희는 이날 결혼해요.<br>저희의 시작을<br>축하해주세요.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        -->
+
+        <!-- 마음전하실곳 Section -->
+        <section class="gift-section">
+            <div class="container">
+                <div class="gift-content">
+                    <div class="gift-header">
+                        <h4 class="gift-title">마음 전하실 곳</h4>
+                    </div>
+                    <div class="gift-accounts">
+                        <div class="account-card">
+                            <div class="account-header" onclick="toggleAccountCard(this)">
+                                <h3>신랑측</h3>
+                                <span class="account-arrow">∨</span>
+                            </div>
+                            <div class="account-details">
+                                <div class="account-item-new">
+                                    <div class="account-info-inline">
+                                        <div class="bank-name-small">토그은행 김도현</div>
+                                        <div class="account-number-large">1111-1111-1111-1111</div>
+                                    </div>
+                                    <div class="account-buttons-inline">
+                                        <button class="copy-icon-btn" onclick="copyAccount('1111-1111-1111-1111')" title="계좌번호 복사">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                            </svg>
+                                        </button>
+                                        <button class="kakaopay-icon-btn" onclick="openKakaoPay('신랑')" title="카카오페이 송금">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                                <path d="M12 3C7.031 3 3 6.582 3 10.975C3 13.719 4.75 16.063 7.25 17.25L6.375 20.625C6.281 20.938 6.563 21.219 6.875 21.125L10.875 19.313C11.25 19.375 11.625 19.406 12 19.406C16.969 19.406 21 15.825 21 11.431C21 7.038 16.969 3 12 3Z"/>
+                                            </svg>
+                                            <span style="font-size: 12px; margin-left: 2px;">pay</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="account-divider"></div>
+                                <div class="account-item-new">
+                                    <div class="account-info-inline">
+                                        <div class="bank-name-small">카카오뱅크 김종혁</div>
+                                        <div class="account-number-large">2222-2222-2222-2222</div>
+                                    </div>
+                                    <div class="account-buttons-inline">
+                                        <button class="copy-icon-btn" onclick="copyAccount('2222-2222-2222-2222')" title="계좌번호 복사">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                            </svg>
+                                        </button>
+                                        <button class="kakaopay-icon-btn" onclick="openKakaoPay('신랑아버지')" title="카카오페이 송금">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                                <path d="M12 3C7.031 3 3 6.582 3 10.975C3 13.719 4.75 16.063 7.25 17.25L6.375 20.625C6.281 20.938 6.563 21.219 6.875 21.125L10.875 19.313C11.25 19.375 11.625 19.406 12 19.406C16.969 19.406 21 15.825 21 11.431C21 7.038 16.969 3 12 3Z"/>
+                                            </svg>
+                                            <span style="font-size: 12px; margin-left: 2px;">pay</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="account-divider"></div>
+                                <div class="account-item-new">
+                                    <div class="account-info-inline">
+                                        <div class="bank-name-small">카카오뱅크 최은혜</div>
+                                        <div class="account-number-large">3333-3333-3333-3333</div>
+                                    </div>
+                                    <div class="account-buttons-inline">
+                                        <button class="copy-icon-btn" onclick="copyAccount('3333-3333-3333-3333')" title="계좌번호 복사">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                            </svg>
+                                        </button>
+                                        <button class="kakaopay-icon-btn" onclick="openKakaoPay('신랑어머니')" title="카카오페이 송금">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                                <path d="M12 3C7.031 3 3 6.582 3 10.975C3 13.719 4.75 16.063 7.25 17.25L6.375 20.625C6.281 20.938 6.563 21.219 6.875 21.125L10.875 19.313C11.25 19.375 11.625 19.406 12 19.406C16.969 19.406 21 15.825 21 11.431C21 7.038 16.969 3 12 3Z"/>
+                                            </svg>
+                                            <span style="font-size: 12px; margin-left: 2px;">pay</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="account-card">
+                            <div class="account-header" onclick="toggleAccountCard(this)">
+                                <h3>신부측</h3>
+                                <span class="account-arrow">∨</span>
+                            </div>
+                            <div class="account-details">
+                                <div class="account-item-new">
+                                    <div class="account-info-inline">
+                                        <div class="bank-name-small">카카오뱅크 이지영</div>
+                                        <div class="account-number-large">4444-4444-4444-4444</div>
+                                    </div>
+                                    <div class="account-buttons-inline">
+                                        <button class="copy-icon-btn" onclick="copyAccount('4444-4444-4444-4444')" title="계좌번호 복사">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                            </svg>
+                                        </button>
+                                        <button class="kakaopay-icon-btn" onclick="openKakaoPay('신부')" title="카카오페이 송금">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                                <path d="M12 3C7.031 3 3 6.582 3 10.975C3 13.719 4.75 16.063 7.25 17.25L6.375 20.625C6.281 20.938 6.563 21.219 6.875 21.125L10.875 19.313C11.25 19.375 11.625 19.406 12 19.406C16.969 19.406 21 15.825 21 11.431C21 7.038 16.969 3 12 3Z"/>
+                                            </svg>
+                                            <span style="font-size: 12px; margin-left: 2px;">pay</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="account-divider"></div>
+                                <div class="account-item-new">
+                                    <div class="account-info-inline">
+                                        <div class="bank-name-small">카카오뱅크 이민수</div>
+                                        <div class="account-number-large">5555-5555-5555-5555</div>
+                                    </div>
+                                    <div class="account-buttons-inline">
+                                        <button class="copy-icon-btn" onclick="copyAccount('5555-5555-5555-5555')" title="계좌번호 복사">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                            </svg>
+                                        </button>
+                                        <button class="kakaopay-icon-btn" onclick="openKakaoPay('신부아버지')" title="카카오페이 송금">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                                <path d="M12 3C7.031 3 3 6.582 3 10.975C3 13.719 4.75 16.063 7.25 17.25L6.375 20.625C6.281 20.938 6.563 21.219 6.875 21.125L10.875 19.313C11.25 19.375 11.625 19.406 12 19.406C16.969 19.406 21 15.825 21 11.431C21 7.038 16.969 3 12 3Z"/>
+                                            </svg>
+                                            <span style="font-size: 12px; margin-left: 2px;">pay</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="account-divider"></div>
+                                <div class="account-item-new">
+                                    <div class="account-info-inline">
+                                        <div class="bank-name-small">신한은행 배경난</div>
+                                        <div class="account-number-large">110-295-937603</div>
+                                    </div>
+                                    <div class="account-buttons-inline">
+                                        <button class="copy-icon-btn" onclick="copyAccount('6666-6666-6666-6666')" title="계좌번호 복사">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                            </svg>
+                                        </button>
+                                        <button class="kakaopay-icon-btn" onclick="openKakaoPay('신부어머니')" title="카카오페이 송금">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                                <path d="M12 3C7.031 3 3 6.582 3 10.975C3 13.719 4.75 16.063 7.25 17.25L6.375 20.625C6.281 20.938 6.563 21.219 6.875 21.125L10.875 19.313C11.25 19.375 11.625 19.406 12 19.406C16.969 19.406 21 15.825 21 11.431C21 7.038 16.969 3 12 3Z"/>
+                                            </svg>
+                                            <span style="font-size: 12px; margin-left: 2px;">pay</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 연락하기 팝업 -->
+        <div id="contactModal" class="contact-modal">
+            <div class="contact-modal-content">
+                <div class="contact-modal-header">
+                    <h3>연락하기</h3>
+                    <span class="contact-close" onclick="closeContactModal()">&times;</span>
+                </div>
+                <div class="contact-modal-body">
+                    <div class="contact-section">
+                        <h4>신랑 측</h4>
+                        <div class="contact-item">
+                            <span class="contact-name">신랑 아버지 이양섭</span>
+                            <span class="contact-dots">···</span>
+                            <div class="contact-buttons-inline">
+                                <button class="contact-icon-btn" onclick="callNumber('010-5011-8681')">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                    </svg>
+                                </button>
+                                <button class="contact-icon-btn" onclick="sendSMS('010-5011-8681')">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-name">신랑 어머니 선연옥</span>
+                            <span class="contact-dots">···</span>
+                            <div class="contact-buttons-inline">
+                                <button class="contact-icon-btn" onclick="callNumber('010-5549-1607')">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                    </svg>
+                                </button>
+                                <button class="contact-icon-btn" onclick="sendSMS('010-5549-1607')">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-section">
+                        <h4>신부 측</h4>
+                        <div class="contact-item">
+                            <span class="contact-name">신부 아버지 배승기</span>
+                            <span class="contact-dots">···</span>
+                            <div class="contact-buttons-inline">
+                                <button class="contact-icon-btn" onclick="callNumber('010-2985-7611')">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                    </svg>
+                                </button>
+                                <button class="contact-icon-btn" onclick="sendSMS('010-2985-7611')">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-name">신부 어머니 이화순</span>
+                            <span class="contact-dots">···</span>
+                            <div class="contact-buttons-inline">
+                                <button class="contact-icon-btn" onclick="callNumber('010-9442-7611')">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                    </svg>
+                                </button>
+                                <button class="contact-icon-btn" onclick="sendSMS('010-9442-7611')">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p>이인태 ♥ 배경난</p>
+                <p>2025. 12. 14</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.2/kakao.min.js"
+            integrity="sha384-TiCUE00h649CAMonG018J2ujOgDKW/kVWlChEuu4jK2vxfAAD0eZxzCKakxg55G4" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script>
+        // 페이지 로드 후 지도 초기화
+        document.addEventListener('DOMContentLoaded', function() {
+            // 지도 초기화를 약간 지연시켜 다른 요소들이 먼저 로드되도록 함
+            setTimeout(initKakaoMap, 1000);
+        });
+
+        // 카카오 SDK 초기화 (카카오맵과 동일한 키 사용)
+        Kakao.init('d38ad3094c381290adf32e265581afe2');
+        
+        // 카카오톡 공유하기
+        function shareKakao() {
+            Kakao.Share.sendDefault({
+                objectType: 'feed',
+                content: {
+                    title: '이인태 ♥ 배경난 결혼식 초대장',
+                    description: '2025년 12월 14일 일요일 오전 11시\n저희 결혼합니다. 소중한 분들을 모시고 새로운 시작을 하려 합니다.',
+                    imageUrl: window.location.origin + '/new-hero-image.jpg', // 대표 이미지
+                    link: {
+                        mobileWebUrl: window.location.href,
+                        webUrl: window.location.href,
+                    },
+                },
+                buttons: [
+                    {
+                        title: '청첩장 보기',
+                        link: {
+                            mobileWebUrl: window.location.href,
+                            webUrl: window.location.href,
+                        },
+                    },
+                ],
+            });
+        }
+
+        // URL 복사하기
+        function copyURL() {
+            const url = window.location.href;
+            
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(url).then(function() {
+                    alert('청첩장 주소가 복사되었습니다!');
+                });
+            } else {
+                // 구형 브라우저 지원
+                const textArea = document.createElement('textarea');
+                textArea.value = url;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+                alert('청첩장 주소가 복사되었습니다!');
+            }
+        }
+
+        // 연락하기 팝업 열기
+        function showContactOptions() {
+            document.getElementById('contactModal').style.display = 'block';
+        }
+
+        // 연락하기 팝업 닫기
+        function closeContactModal() {
+            document.getElementById('contactModal').style.display = 'none';
+        }
+
+        // 전화 걸기
+        function callNumber(phoneNumber) {
+            window.location.href = 'tel:' + phoneNumber;
+        }
+
+        // 문자 보내기
+        function sendSMS(phoneNumber) {
+            window.location.href = 'sms:' + phoneNumber;
+        }
+
+        // 카카오페이 송금 링크 열기
+        function openKakaoPay(recipient) {
+            // 카카오페이 송금 링크 (실제 사용시 각자의 카카오페이 링크로 변경 필요)
+            const kakaoPayLinks = {
+                '신랑아버지': 'https://qr.kakaopay.com/송금링크1', // 실제 링크로 변경
+                '신랑어머니': 'https://qr.kakaopay.com/송금링크2', // 실제 링크로 변경
+                '신랑': 'https://qr.kakaopay.com/송금링크3', // 실제 링크로 변경
+                '신부아버지': 'https://qr.kakaopay.com/송금링크4', // 실제 링크로 변경
+                '신부어머니': 'https://qr.kakaopay.com/송금링크5', // 실제 링크로 변경
+                '신부': 'https://qr.kakaopay.com/Ej893okHa' // 실제 링크로 변경
+            };
+            
+            const link = kakaoPayLinks[recipient];
+            console.log('클릭된 recipient:', recipient);
+            console.log('찾은 링크:', link);
+            
+            if (link) {
+                // 디버깅: 링크가 제대로 열리는지 확인
+                alert('카카오페이 링크로 이동합니다: ' + link);
+                
+                // 모바일에서는 카카오페이 앱으로, PC에서는 웹으로 열기
+                try {
+                    window.open(link, '_blank');
+                } catch (error) {
+                    console.error('링크 열기 실패:', error);
+                    // 대안: 현재 창에서 열기
+                    window.location.href = link;
+                }
+            } else {
+                alert('카카오페이 송금을 위해 카카오톡에서 "' + recipient + '"을 검색하여 송금해주세요.');
+            }
+        }
+
+        // 팝업 외부 클릭 시 닫기
+        window.onclick = function(event) {
+            const modal = document.getElementById('contactModal');
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
