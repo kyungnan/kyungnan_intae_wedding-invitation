@@ -236,6 +236,42 @@
             </div>
         </section>
 
+        <!-- Gallery Section -->
+        <section class="gallery-section">
+            <div class="container">
+                <div class="gallery-content">
+                    <div class="gallery-header">
+                        <h4 class="gallery-subtitle">GALLERY</h4>
+                        <h2 class="gallery-title">갤러리</h2>
+                    </div>
+                    
+                    <div class="gallery-container">
+                        <div class="gallery-grid" id="galleryGrid">
+                            <!-- 갤러리 이미지들이 여기에 동적으로 추가됩니다 -->
+                        </div>
+                        <div class="gallery-fade" id="galleryFade"></div>
+                        <div class="gallery-more" id="galleryMore">
+                            <button class="gallery-more-btn" onclick="toggleGallery()">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                    <path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- 이미지 모달 -->
+                    <div id="imageModal" class="modal">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <img class="modal-content" id="modalImage">
+                        <div class="modal-nav">
+                            <button class="prev-btn" onclick="changeImage(-1)">&#10094;</button>
+                            <button class="next-btn" onclick="changeImage(1)">&#10095;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Location Section -->
         <section class="location-section">
             <div class="container">
@@ -321,42 +357,6 @@
                                 <li>지하 3층, 지하 4층 주차장 이용</li>
                                 <li>웨딩홀 전용 엘리베이터 7,8호기를 이용하시면 편리합니다.</li>
                             </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Gallery Section -->
-        <section class="gallery-section">
-            <div class="container">
-                <div class="gallery-content">
-                    <div class="gallery-header">
-                        <h4 class="gallery-subtitle">GALLERY</h4>
-                        <h2 class="gallery-title">갤러리</h2>
-                    </div>
-                    
-                    <div class="gallery-container">
-                        <div class="gallery-grid" id="galleryGrid">
-                            <!-- 갤러리 이미지들이 여기에 동적으로 추가됩니다 -->
-                        </div>
-                        <div class="gallery-fade" id="galleryFade"></div>
-                        <div class="gallery-more" id="galleryMore">
-                            <button class="gallery-more-btn" onclick="toggleGallery()">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                                    <path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                    
-                    <!-- 이미지 모달 -->
-                    <div id="imageModal" class="modal">
-                        <span class="close" onclick="closeModal()">&times;</span>
-                        <img class="modal-content" id="modalImage">
-                        <div class="modal-nav">
-                            <button class="prev-btn" onclick="changeImage(-1)">&#10094;</button>
-                            <button class="next-btn" onclick="changeImage(1)">&#10095;</button>
                         </div>
                     </div>
                 </div>
