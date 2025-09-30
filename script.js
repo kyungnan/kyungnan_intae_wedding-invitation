@@ -593,6 +593,7 @@ function loadGalleryImages() {
         '색1 (16)_optimized.jpg',
         '색1 (17)_optimized.jpg',
         '18-1 재수정_optimized.jpg',
+        '19 수정_optimized.jpg',
         '색1 (19)_optimized.jpg',
         '20-1 재수정_optimized.jpg',
         '색1 (21)_optimized.jpg',
