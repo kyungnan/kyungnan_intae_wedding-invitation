@@ -787,6 +787,37 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
+    // 터치 이벤트 (스와이프)
+    let touchStartX = 0;
+    let touchEndX = 0;
+    
+    const modalImage = document.getElementById('modalImage');
+    if (modalImage) {
+        modalImage.addEventListener('touchstart', function(event) {
+            touchStartX = event.changedTouches[0].screenX;
+        });
+        
+        modalImage.addEventListener('touchend', function(event) {
+            touchEndX = event.changedTouches[0].screenX;
+            handleSwipe();
+        });
+    }
+    
+    function handleSwipe() {
+        const swipeThreshold = 50; // 최소 스와이프 거리
+        const swipeDistance = touchEndX - touchStartX;
+        
+        if (Math.abs(swipeDistance) > swipeThreshold) {
+            if (swipeDistance > 0) {
+                // 오른쪽으로 스와이프 - 이전 이미지
+                changeImage(-1);
+            } else {
+                // 왼쪽으로 스와이프 - 다음 이미지
+                changeImage(1);
+            }
+        }
+    }
+
     // 키보드 이벤트
     document.addEventListener('keydown', function(event) {
         const modal = document.getElementById('imageModal');
